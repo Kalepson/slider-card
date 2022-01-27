@@ -4,7 +4,7 @@
 
 .container {
     display: flex;
-    /*overflow: hidden;*/
+    overflow: hidden;
     justify-content: center;
     margin-top: 100px;
     width: 400px;
@@ -19,10 +19,9 @@
     height: 500px;
     position: relative;
     transition: all ease 1s;
-
 }
 
-.footer_Cont_decoration{
+.footer_Cont_decoration {
     display: flex;
     margin-top: -15px;
     height: 10px;
@@ -30,24 +29,29 @@
     border-radius: 2px;
     background-color: #EBE9E8FF;
 }
+
 .content_html {
     display: flex;
     margin-top: 100px;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
-.content_css{
+
+.content_css {
     display: flex;
     margin-top: 100px;
-    justify-content:center;
+    margin-left: 400px;
+    justify-content: center;
     flex-direction: column;
 }
+
 .content_js {
     display: flex;
     margin-top: 100px;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
+
 .text_decoration1 {
     display: flex;
     margin-top: 50px;
@@ -56,6 +60,7 @@
     border-radius: 2px;
     background-color: #DCDCDCFF;
 }
+
 .text_decoration2 {
     display: flex;
     margin-top: 50px;
@@ -64,14 +69,14 @@
     border-radius: 2px;
     background-color: #DCDCDCFF;
 }
+
 .footer_Cont_bar {
     display: flex;
-    margin-top:80px;
+    margin-top: 80px;
     height: 1px;
     width: 400px;
     background-color: #c5c3c3;
 }
-
 
 .img_button {
     display: flex;
@@ -80,47 +85,40 @@
     height: 100px;
     width: 400px;
     padding-top: 10px;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
+.button_passive, .button_html, .button_css, .button_js {
+    transform: none;
+    filter: contrast(10%);
+}
 
-.html {
-    display: flex;
-    filter: contrast(10%);
-}
-.html1 {
-    display: flex;
-    filter: none;
+.button_active {
+    filter: contrast(200%);
     transform: scale(1.20);
 }
-.css {
-    display: flex;
-    filter: contrast(10%);
+
+.content_css {
+    transition: all 1s ease;
 }
-.css1 {
-    display: flex;
-    filter: none;
-    transform: scale(1.20);
-}
-.js {
-    display: flex;
-    filter: contrast(10%);
-}
-.js1 {
-    display: flex;
-    filter: none;
-    transform: scale(1.20);
+
+.content_css.move {
+    left: 400px;
+    transform: translate(-400px, 0);
 }
 
 .img_html {
     background-image: url("../img/html-icon.png");
     background-repeat: no-repeat;
 }
+
 .img_css {
     background-image: url("../img/css-icon.png");
     background-repeat: no-repeat;
 }
+
 .img_js {
     background-image: url("../img/js-icon.png");
     background-repeat: no-repeat;
 }
+
