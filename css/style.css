@@ -122,24 +122,3 @@
     background-repeat: no-repeat;
 }
 
-.background_html {
-    animation: coloare -5s normal;
-}
-@keyframes coloare {
-    10% {
-        background-color: #eeeaeb;
-    }
-    25% {
-        background-color: #eecad5;
-    }
-    50% {
-        background-color: #EFADC3FF;
-    }
-    75% {
-        background-color: #ecb5c7;
-    }
-
-    100% {
-        background-color: #EFADC3FF;
-    }
-}
