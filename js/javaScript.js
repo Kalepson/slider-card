@@ -16,7 +16,6 @@ button_html.addEventListener("click", () => {
     body.style.backgroundColor = "#EFADC3FF"
     button_js.className = "button_passive"
     slide_container.style.marginLeft = "400px"
-
 })
 
 button_js.addEventListener("click", () => {
