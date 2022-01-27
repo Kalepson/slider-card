@@ -57,7 +57,7 @@
     margin-top: 50px;
     height: 10px;
     width: 200px;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #DCDCDCFF;
 }
 
@@ -66,7 +66,7 @@
     margin-top: 50px;
     height: 10px;
     width: 100px;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #DCDCDCFF;
 }
 
@@ -122,3 +122,18 @@
     background-repeat: no-repeat;
 }
 
+.background_html {
+    animation: coloare 10ms;
+    background-color: #EFADC3FF;
+}
+@keyframes coloare {
+    10% {
+        background-color: #eeeaeb;
+    }
+    40% {
+        background-color: #eecad5;
+    }
+    50% {
+        background-color: #EFADC3FF;
+    }
+}
