@@ -25,6 +25,7 @@ button_js.addEventListener("click", () => {
     button_js.classList.toggle("button_active")
     body.style.backgroundColor = "#EDE34DFF"
     button_css.className = "button_passive"
+    button_html.className = "button_passive"
     slide_container.style.marginLeft = "-800px"
 })
 
