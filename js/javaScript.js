@@ -8,13 +8,16 @@ button_css.addEventListener("click", () => {
     button_css.classList.toggle("button_active")
     body.style.backgroundColor = "#9392E2FF"
     button_html.className = "button_passive"
+    button_js.className = "button_passive"
     slide_container.style.marginLeft = "0px"
 })
 
 button_html.addEventListener("click", () => {
     button_html.classList.toggle("button_active")
     body.style.backgroundColor = "#EFADC3FF"
+    body.className = "background_html"
     button_js.className = "button_passive"
+    button_css.className = "button_passive"
     slide_container.style.marginLeft = "400px"
 })
 
