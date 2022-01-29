@@ -76,7 +76,7 @@ body {
     filter: contrast(10%);
 }
 
-.button_active, .button_html {
+.button_active {
     transition: all 600ms ease;
     filter: contrast(200%);
     transform: scale(1.20);
