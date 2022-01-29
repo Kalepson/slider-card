@@ -55,7 +55,7 @@ body {
 
 .footer_Cont_decoration {
     display: flex;
-    margin-top: -24px;
+    margin-top: -15px;
     height: 10px;
     width: 200px;
     border-radius: 2px;
@@ -65,9 +65,9 @@ body {
 .img_button {
     display: flex;
     cursor: pointer;
-    width: 300px;
+    width: 350px;
     height: 100px;
-    margin-top: 1px;
+    margin-top: -10px;
 }
 
 .button_passive {
