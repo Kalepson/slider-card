@@ -82,19 +82,13 @@ body {
     justify-content: space-around;
 }
 
-.button_html {
-    transition: all 600ms ease;
-    filter: contrast(200%);
-    transform: scale(1.20);
-}
-
-.button_passive, .button_css, .button_js {
+.button_passive, .button_css, .button_js  {
     transition: all 600ms ease;
     transform: none;
     filter: contrast(10%);
 }
 
-.button_active {
+.button_active,.button_html {
     transition: all 600ms ease;
     filter: contrast(200%);
     transform: scale(1.20);
