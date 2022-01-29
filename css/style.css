@@ -3,7 +3,6 @@
 }
 
 body {
-    background-color: #EFADC3FF;
     overflow: hidden;
 }
 
@@ -45,7 +44,7 @@ body {
     width: 200px;
 }
 
-.footer_Cont_bar {
+.footer_cont_bar {
     display: flex;
     margin-top: 80px;
     height: 1px;
@@ -53,7 +52,7 @@ body {
     background-color: #c5c3c3;
 }
 
-.footer_Cont_decoration {
+.footer_cont_decoration {
     display: flex;
     margin-top: -15px;
     height: 10px;
@@ -62,7 +61,7 @@ body {
     background-color: #afacac;
 }
 
-.img_button {
+.buttons-container {
     display: flex;
     cursor: pointer;
     width: 350px;
@@ -70,13 +69,13 @@ body {
     margin-top: -10px;
 }
 
-.button_passive {
+.btn {
     transition: all 600ms ease;
     transform: none;
     filter: contrast(10%);
 }
 
-.button_active {
+.active {
     transition: all 600ms ease;
     filter: contrast(200%);
     transform: scale(1.20);
