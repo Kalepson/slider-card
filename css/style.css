@@ -4,10 +4,10 @@
 
 body {
     background-color: #EFADC3FF;
+    overflow: hidden;
 }
 
 .container {
-    display: flex;
     overflow: hidden;
     justify-content: center;
     margin-top: 100px;
@@ -17,35 +17,17 @@ body {
     background-color: #fcfdfd;
 }
 
-.slide-line {
+.slide_content {
     display: flex;
-    width: 1200px;
-    height: 500px;
-    position: relative;
-    transition: all .10s ease;
-}
-
-.footer_Cont_decoration {
-    display: flex;
-    margin-top: -15px;
-    height: 10px;
-    width: 200px;
-    border-radius: 2px;
-    background-color: #EBE9E8FF;
-}
-
-.content_css {
-    margin-left: 400px;
+    padding-top: 100px;
+    margin-left: 600px;
+    justify-content: space-around;
     transition: all 1s ease;
 }
 
-.content_js, .content_html, .content_css {
+.img {
     display: flex;
-    margin-top: 100px;
-    justify-content: center;
-    flex-direction: column;
 }
-
 
 .text_decoration {
     display: flex;
@@ -63,7 +45,6 @@ body {
     width: 200px;
 }
 
-
 .footer_Cont_bar {
     display: flex;
     margin-top: 80px;
@@ -72,23 +53,30 @@ body {
     background-color: #c5c3c3;
 }
 
-.img_button {
+.footer_Cont_decoration {
     display: flex;
-    margin-top: -110px;
-    cursor: pointer;
-    height: 100px;
-    width: 400px;
-    padding-top: 10px;
-    justify-content: space-around;
+    margin-top: -24px;
+    height: 10px;
+    width: 200px;
+    border-radius: 2px;
+    background-color: #afacac;
 }
 
-.button_passive, .button_css, .button_js  {
+.img_button {
+    display: flex;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    margin-top: 1px;
+}
+
+.button_passive {
     transition: all 600ms ease;
     transform: none;
     filter: contrast(10%);
 }
 
-.button_active,.button_html {
+.button_active, .button_html {
     transition: all 600ms ease;
     filter: contrast(200%);
     transform: scale(1.20);
