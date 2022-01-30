@@ -3,6 +3,7 @@ const body = document.querySelector("body")
 const container = document.querySelector(".container")
 const buttonsContainer = document.querySelector(".buttons-container")
 
+// buttons-container createElement
 const btnSrc = [
     'img/HTML_icon.png',
     'img/CSS_icon.png',
@@ -10,27 +11,30 @@ const btnSrc = [
 ]
 
 btnSrc.forEach(element => {
-    const img = document.createElement("img");
+    const img = document.createElement("img")
     img.className = "btn"
+    img.alt = "button"
     img.src = element;
     buttonsContainer.append(img)
 })
 
+// footer_cont_decoration createElement
 const footerDecoration = document.createElement("div")
 footerDecoration.className = "footer_cont_decoration";
 container.append(footerDecoration)
 
+//slide_content createElement
 const containerSrc = [
     'img/iconHTML.png',
     'img/iconCSS.png',
     'img/iconJS.png',
 ]
 
-containerSrc.forEach(element => {
+containerSrc.forEach(ele => {
     const divContainer = document.createElement("div"),
-        img = document.createElement("img");
+    img = document.createElement("img");
     img.className = "img";
-    img.src = element;
+    img.src = ele;
     const longLine = document.createElement("div")
     longLine.className = "text_decoration long-line";
     const shortLine = document.createElement("div")
