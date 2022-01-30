@@ -1,7 +1,27 @@
 const slideContainer = document.querySelector(".slide_content")
 const body = document.querySelector("body")
-const buttons = document.querySelectorAll('.btn');
 const container = document.querySelector(".container")
+const buttonsContainer = document.querySelector(".buttons-container")
+
+// buttons-container createElement
+const btnSrc = [
+    'img/HTML_icon.png',
+    'img/CSS_icon.png',
+    'img/JS_icon.png',
+]
+
+btnSrc.forEach(element => {
+    const img = document.createElement("img")
+    img.className = "btn"
+    img.alt = "button"
+    img.src = element;
+    buttonsContainer.append(img)
+})
+
+// footer_cont_decoration createElement
+const footerDecoration = document.createElement("div")
+footerDecoration.className = "footer_cont_decoration";
+container.append(footerDecoration)
 
 //slide_content createElement
 const containerSrc = [
@@ -9,9 +29,10 @@ const containerSrc = [
     'img/iconCSS.png',
     'img/iconJS.png',
 ]
+
 containerSrc.forEach(ele => {
-    const divContainer = document.createElement("div");
-    const img = document.createElement("img");
+    const divContainer = document.createElement("div"),
+    img = document.createElement("img");
     img.className = "img";
     img.src = ele;
     const longLine = document.createElement("div")
@@ -26,26 +47,7 @@ containerSrc.forEach(ele => {
     slideContainer.append(divContainer)
 })
 
-// buttons-container createElement
-const buttonsContainer = document.querySelector(".buttons-container")
-const btnSrc = [
-    'img/HTML_icon.png',
-    'img/CSS_icon.png',
-    'img/JS_icon.png',
-]
-
-btnSrc.forEach(element => {
-    const img = document.createElement("img")
-    img.className = "btn"
-    img.src = element;
-    buttonsContainer.append(img)
-})
-
-// footer_cont_decoration createElement
-const footerDecoration = document.createElement("div")
-footerDecoration.className = "footer_cont_decoration";
-container.append(footerDecoration)
-
+const buttons = document.querySelectorAll('.btn');
 const cardsStyle = [
     {position: '600px', color: '#EFADC3FF'},
     {position: '0', color: '#9392E2FF'},
