@@ -1,28 +1,31 @@
-const slide_container = document.querySelector(".slide_content")
+const slideContainer = document.querySelector(".slide_content")
 const body = document.querySelector("body")
-let buttons = document.querySelectorAll('.btn');
-body.style.backgroundColor = "#EFADC3FF"
+const buttons = document.querySelectorAll('.btn');
 
-buttons.forEach(button => {
-    button.addEventListener('click', function () {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
+const cardsStyle = [
+    { position: '600px', color: '#EFADC3FF' },
+    { position: '0', color: '#9392E2FF' },
+    { position: '-800px', color: '#EDE34DFF' },
+];
+
+const initialPosition = () => {
+    buttons[0].classList.add('active');
+    body.style.backgroundColor = cardsStyle[0].color;
+    slideContainer.style.marginLeft = cardsStyle[0].position;
+}
+
+const slideshow = () => {
+    initialPosition()
+    buttons.forEach((btn, idx) => {
+        btn.addEventListener('click', () => {
+            buttons.forEach(el => el.classList.remove('active'));
+            btn.classList.add('active');
+            body.style.backgroundColor = cardsStyle[idx].color;
+            slideContainer.style.marginLeft = cardsStyle[idx].position;
+        });
     });
-});
+};
 
-buttons[0].addEventListener("click", () => {
-    body.style.backgroundColor = "#EFADC3FF"
-    slide_container.style.marginLeft = "600px"
-})
-
-buttons[1].addEventListener("click", () => {
-    body.style.backgroundColor = "#9392E2FF"
-    slide_container.style.marginLeft = "0px"
-})
-
-buttons[2].addEventListener("click", () => {
-    body.style.backgroundColor = "#EDE34DFF"
-    slide_container.style.marginLeft = "-800px"
-})
+slideshow()
 
 
