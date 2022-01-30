@@ -1,11 +1,55 @@
 const slideContainer = document.querySelector(".slide_content")
 const body = document.querySelector("body")
 const buttons = document.querySelectorAll('.btn');
+const container = document.querySelector(".container")
+
+//slide_content createElement
+const containerSrc = [
+    'img/iconHTML.png',
+    'img/iconCSS.png',
+    'img/iconJS.png',
+]
+containerSrc.forEach(ele => {
+    const divContainer = document.createElement("div");
+    const img = document.createElement("img");
+    img.className = "img";
+    img.src = ele;
+    const longLine = document.createElement("div")
+    longLine.className = "text_decoration long-line";
+    const shortLine = document.createElement("div")
+    shortLine.className = "text_decoration short-line";
+    const longLine1 = document.createElement("div")
+    longLine1.className = "text_decoration long-line";
+    const footerContBar = document.createElement("div")
+    footerContBar.className = "footer_cont_bar"
+    divContainer.append(img, longLine, shortLine, longLine1, footerContBar)
+    slideContainer.append(divContainer)
+})
+
+// buttons-container createElement
+const buttonsContainer = document.querySelector(".buttons-container")
+const btnSrc = [
+    'img/HTML_icon.png',
+    'img/CSS_icon.png',
+    'img/JS_icon.png',
+]
+
+btnSrc.forEach(element => {
+    const img = document.createElement("img")
+    img.className = "btn"
+    img.src = element;
+    buttonsContainer.append(img)
+})
+
+// footer_cont_decoration createElement
+const footerDecoration = document.createElement("div")
+footerDecoration.className = "footer_cont_decoration";
+container.append(footerDecoration)
 
 const cardsStyle = [
-    { position: '600px', color: '#EFADC3FF' },
-    { position: '0', color: '#9392E2FF' },
-    { position: '-800px', color: '#EDE34DFF' },
+    {position: '600px', color: '#EFADC3FF'},
+    {position: '0', color: '#9392E2FF'},
+    {position: '-800px', color: '#EDE34DFF'},
 ];
 
 const initialPosition = () => {
@@ -27,5 +71,4 @@ const slideshow = () => {
 };
 
 slideshow()
-
 
